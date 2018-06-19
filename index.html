@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt_BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Seminário de jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+  </head>
+  <body>
+        <header class="header-site">
+          <div class="container">
+            <div class="inside-header">
+              <figure class="logo-jquery col-4">
+                <img src="images/logo-jquery.png" alt="jQuery" >
+              </figure>
+              <h1 class="h1-site col-8">jQuery - Write Less, Do More</h1>
+            </div>
+          </div>
+
+        </header>
+        <div class="container">
+          <div class="slides">
+            <section class="page1">
+                <h2 class="slide-title">Criação</h2>
+                <p>O jQuery é uma biblioteca JavaScript que foi criada com o intuito de simplificar a maneira de escrever JS. </p>
+                <p>Em 2006, John Resig estava frustrado com a dificuldade de escrever JavaScript que funcionasse em vários navegadores, e decidiu escrever sua própria biblioteca JS para resolver o problema: o jQuery.</p>
+            </section>
+            <section class="page2">
+                <h2 class="slide-title">O jQuery</h2>
+                <p>Como dito o jQuery foi feito para facilitar o desenvolvimento entre os navegadores, ja que na época cada motor de renderização dos Browsers trabalhava de um jeito</p>
+                <p>Com o jQuery era possivel escrever somente um código que rodava nos diversos navegadores.</p>
+            </section>
+            <section class="page3">
+                <h2 class="slide-title">Como utilizar?</h2>
+                <p>Para utilizar o jquery basta adicionar o script que pode ser baixado no site (https://jquery.com/) em um arquivo html dentro da tag body.</p>
+                <div class="code">
+                  &lt;script src="js/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+                </div>
+                <p>Temos a possibilidade de utilizar o arquivo diretamente por um cdn também.</p>
+            </section>
+            <section class="page4">
+                <h2 class="slide-title">Pra que serve?</h2>
+
+                <p>Podemos utilizar a jQuery para:</p>
+
+                <ul>
+                  <li>Adicionar efeitos visuais e animações;</li>
+                  <li>Acessar e manipular o DOM;</li>
+                  <li>Carregarm componentes Ajax;</li>
+                  <li>Prover interatividade;</li>
+                  <li>Fazer alteração de conteúdo;</li>
+                </ul>
+            </section>
+            <section class="page5">
+              <h2 class="slide-title">A função $()</h2>
+              <p>A função $() é a abreviação da função jQuery(), ela é utilizada para reconhecer elementos no DOM.</p>
+              <p>Podemos utilizar ela com seletores css para selecionar os diversos elementos.</p>
+              <p>Exemplos:</p>
+              <div class="code">
+                <p>$(".classe")</p>
+                <p>$("#id")</p>
+                <p>$("div")</p>
+                <p>$("a[href=#]")</p>
+              </div>
+              <a href="exemplo1.html" target="_blank">Exemplo</a>
+            </section>
+            <section class="page5">
+              <h2 class="slide-title">Funções jQuery</h2>
+              <p>As funções no jQuery, em sua maioria, tabalham com o mesmo nome para get e set.</p>
+              <p>Um mesmo nome de função pode servir para get, quanto utilizado sem argumentos ou para set, quando um argumento é especificado.<p>
+              <p>Por exemplo a função $(input).val() recebe o valor de um campo, enquanto a função $(input).val("valor") seta o valor de um campo.<p>
+              <p>Algumas funções também podem receber outra função como argumento.</p>
+              <a href="exemplo2.html" target="_blank">Exemplo</a>
+
+
+            </section>
+            <section class="page5">
+              <h2 class="slide-title">Eventos</h2>
+              <p>Os eventos de JavaScript podem ser implementados com jQuery sem criar um eventListener ou alterar o elemento html, como é feito no JavaScript. No jQuery é possível utilizar métodos que tratam os eventos dos elementos, de mouse, teclado e etc.</p>
+              <p>Alguns eventos disponíves</p>
+              <ul>
+                <li>click()</li>
+                <li>change()</li>
+                <li>keydown()</li>
+                <li>keyup()</li>
+                <li>scroll()</li>
+                <li>submit()</li>
+              </ul>
+              <p> Todos os eventos disponíveis e sua documentação podem ser encontrados em:
+                <a href="https://api.jquery.com/category/events/" target="_blank">https://api.jquery.com/category/events/</a>
+              <p>
+                <p><a href="exemplo3.html" target="_blank">Exemplos</a></p>
+            </section>
+
+          </div>
+        </div>
+
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/slick.min.js"></script>
+            <script src="js/main.js"></script>
+
+  </body>
+</html>

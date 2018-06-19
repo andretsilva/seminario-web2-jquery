@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Seminário de jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+  </head>
+  <body>
+        <header class="header-site">
+          <div class="container">
+            <div class="inside-header">
+              <figure class="logo-jquery col-4">
+                <img src="images/logo-jquery.png" alt="jQuery" >
+              </figure>
+              <h1 class="h1-site col-8">jQuery - Write Less, Do More</h1>
+            </div>
+          </div>
+
+        </header>
+        <div class="container">
+          <div class="form-seletor">
+            <label for="seletor">Digite um seletor</label>
+            <input type="text" id="input-seletor"> <button id="btn-seletor">OK</button>
+          </div>
+          <div class="funcao-utilizada">
+            $('<span class="seletor-acionado"></span>').addClass('selected');
+          </div>
+          <div class="exemplos-boxes">
+            <div class="row-boxes">
+              <div class="exemplo-1 box">
+                <p class="seletores">div.exemplo-1</p>
+              </div>
+              <div class="exemplo-2 box">
+                <p class="seletores">div.exemplo-2</p>
+              </div>
+              <div class="exemplo-3 box" id="exemplo-3">
+                <p class="seletores">div.exemplo-3 #exemplo-3</p>
+              </div>
+            </div>
+            <p class="exemplo-p"><span class="seletores">p.exemplo-p</span><br>Exemplo de Paragrafo</p>
+            <input type="text" id="exemplo-input" class="exemplo-input" value="Exemplo de Input Text">
+
+          </div>
+
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/exemplo1.js"></script>
+
+  </body>
+</html>

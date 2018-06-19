@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt_BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Seminário de jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+  </head>
+  <body>
+        <header class="header-site">
+          <div class="container">
+            <div class="inside-header">
+              <figure class="logo-jquery col-4">
+                <img src="images/logo-jquery.png" alt="jQuery" >
+              </figure>
+              <h1 class="h1-site col-8">jQuery - Write Less, Do More</h1>
+            </div>
+          </div>
+
+        </header>
+        <div class="container">
+          <div class="exemplos-boxes">
+            <div class="text-area">
+              <p class="seletores">textarea#texto</p>
+              <textarea id="texto" class="text-area-exemplo-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam arcu, sollicitudin sed feugiat ultricies, placerat accumsan risus. Sed elementum arcu ante, bibendum finibus velit finibus sed. Nulla pharetra odio ut iaculis laoreet. Praesent vitae pulvinar magna, quis elementum turpis. Nullam magna nunc, ornare eget turpis ac, sollicitudin condimentum erat. Phasellus eget nibh nec nisl blandit porta. Nunc malesuada non augue eu fringilla. Pellentesque at posuere nulla, ac faucibus erat. Etiam eu tincidunt erat, at hendrerit diam. Praesent accumsan est eget augue ornare imperdiet. Etiam rutrum erat sit amet erat facilisis vulputate. In hac habitasse platea dictumst. Cras sed tortor sem.
+              </textarea>
+              <p class="seletores">textarea#texto2</p>
+              <textarea id="texto2" class="text-area-exemplo-2">
+              </textarea>
+            </div>
+            <button id="get-valor">Obter Valor</button> <button id="set-valor">Setar Valor</button>
+            <div class="codigos">
+              <h3>Códigos:</h3>
+              <div class="obter">
+                <h4>Obter Valor</h4>
+                <p>  window.alert($("#texto").val())</p>
+              </div>
+              <div class="obter">
+                <h4>Setar Valor</h4>
+                <p> $("#texto").val('Texto alterado por meio de função do jQuery');</p>
+              </div>
+              <div class="blur">
+                <h4>Deixar Maiusculo</h4>
+                $( "#texto" ).on( "blur", function() {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;$( this ).val(function( i, val ) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#texto2").val(val.toUpperCase());<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;return val;<br>
+                &nbsp;&nbsp;&nbsp;});<br>
+                ));
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/exemplo2.js"></script>
+
+  </body>
+</html>
