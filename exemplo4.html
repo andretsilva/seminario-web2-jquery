@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Seminário de jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+  </head>
+  <body>
+        <header class="header-site">
+          <div class="container">
+            <div class="inside-header">
+              <figure class="logo-jquery col-4">
+                <img src="images/logo-jquery.png" alt="jQuery" >
+              </figure>
+              <h1 class="h1-site col-8">jQuery - write less, do more</h1>
+            </div>
+          </div>
+
+        </header>
+        <div class="container" style="position: relative;">
+          <p id="fim" style="font-size: 20px;position: absolute;top: 0;right: 30px;cursor: pointer;color: initial;">
+            Para o ID
+          </p>
+
+          <div class="exemplos-boxes">
+            <div class="row-boxes row-boxes-exemplo-3">
+              <div style="background:transparent;height:100px;width:100%;position:relative;margin-bottom: 10px;">
+                <div class="animate1" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+              </div>
+              <div style="background:transparent;height:auto;width:100%;position:relative;margin-bottom: 10px;">
+                <div class="animate2" style="background:#98bf21;height:200px;width:600px;">Hello World</div>
+              </div>
+              
+
+            </div>
+            <div class="codigos">
+              <h3>Códigos:</h3>
+              <div class="obter">
+                <h4>Exemplo 1</h4>
+                <p>    $('.animate1').click(function(){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$(this).animate({left: '250px'});<br>
+                  });</p>
+
+              </div>
+              <div class="obter">
+                <h4>Exemplo 2</h4>
+                <p> $('.animate2').click(function(){<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;$(this).animate({fontSize: '100px'}, "slow");<br>
+                });</p>
+              </div>
+              <div class="obter">
+                <h4>Para o ID</h4>
+                <p> $('#fim').click(function(){<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;$('html, body').animate({scrollTop: $('#topo').offset().top}, 300);<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;return false;<br>
+                });</p>
+              </div>
+              <div class="obter">
+                <h4>Para o Topo</h4>
+                <p> $('#topo).click(function(){<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;$('html, body').animate({scrollTop: 0}, 300);<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;return false;<br>
+                });</p>
+              </div>
+            </div>
+            <p id="topo" style="font-size: 20px;position: absolute;bottom: 0;right: 30px;cursor: pointer;">
+              Voltar ao Topo
+            </p>
+          </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/exemplo4.js"></script>
+
+  </body>
+</html>
